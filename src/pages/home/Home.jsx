@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main>
       <Hero />
-      <Highlights />
+      {/* <Highlights /> */}
     </main>
   );
 };
