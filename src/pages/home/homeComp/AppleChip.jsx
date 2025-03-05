@@ -2,8 +2,7 @@ import React, {useRef} from "react";
 import {chipImg, frameImg, frameVideo} from "../../../utils";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
-import { animateWithGsap } from "../../../utils/animation";
-
+import {animateWithGsap} from "../../../utils/animation";
 
 const AppleChip = () => {
   const videoRef = useRef();
@@ -16,16 +15,13 @@ const AppleChip = () => {
       },
       opacity: 0,
       scale: 2,
-      duration: 2,
-      ease: "power2.inOut",
-    });
-
-    animateWithGsap(".g_fadeIn", {
-      opacity: 1,
-      y: 0,
       duration: 1,
       ease: "power2.inOut",
     });
+
+    animateWithGsap(".hiw-title", {opacity: 1, y: 0, duration: 1.1, ease: "power2.inOut"});
+    animateWithGsap(".hiw-subtitle", {opacity: 1, y: 0, duration: 1.1, ease: "power2.inOut"});
+    animateWithGsap(".g_fadeIn", {opacity: 1, y: 0, duration: 1, ease: "power2.inOut"});
   }, []);
 
   return (

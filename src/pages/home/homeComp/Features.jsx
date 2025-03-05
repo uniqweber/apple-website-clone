@@ -18,7 +18,7 @@ const Features = () => {
         videoRef.current.play();
       },
     });
-
+    animateWithGsap("#iphone-title", {y: 0, opacity: 1, });
     animateWithGsap("#features_title", {y: 0, opacity: 1});
     animateWithGsap(".g_grow", {scale: 1, opacity: 1, ease: "power1"}, {scrub: 5.5});
     animateWithGsap(".g_text", {y: 0, opacity: 1, ease: "power2.inOut", duration: 1});
@@ -34,7 +34,7 @@ const Features = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center overflow-hidden">
-          <div className="mt-32 mb-24 pl-24">
+          <div id="iphone-title" className=" mt-20 mb-24 pl-24 opacity-0 translate-y-20">
             <h2 className="text-5xl lg:text-7xl font-semibold">iPhone.</h2>
             <h2 className="text-5xl lg:text-7xl font-semibold">Forged in titanium.</h2>
           </div>
