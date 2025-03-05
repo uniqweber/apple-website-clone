@@ -3,8 +3,7 @@ import {chipImg, frameImg, frameVideo} from "../../../utils";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 import { animateWithGsap } from "../../../utils/animation";
-import { ScrollTrigger } from "gsap/all";
-gsap.registerPlugin(ScrollTrigger);
+
 
 const AppleChip = () => {
   const videoRef = useRef();
@@ -51,7 +50,7 @@ const AppleChip = () => {
               <img src={frameImg} alt="frame" className="bg-transparent relative z-10" />
             </div>
             <div className="hiw-video">
-              <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
+              <video className="pointer-events-none " playsInline preload="none" muted autoPlay ref={videoRef}>
                 <source src={frameVideo} type="video/mp4" />
               </video>
             </div>
