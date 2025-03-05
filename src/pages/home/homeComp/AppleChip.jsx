@@ -12,10 +12,11 @@ const AppleChip = () => {
       scrollTrigger: {
         trigger: "#chip",
         start: "20% bottom",
+
       },
       opacity: 0,
       scale: 2,
-      duration: 1,
+      duration: 1.1,
       ease: "power2.inOut",
     });
 

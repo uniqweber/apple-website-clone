@@ -26,7 +26,7 @@ const Features = () => {
 
   return (
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
-      <div className="screen-max-wdith">
+      <div className="screen-max-width">
         <div className="mb-12 w-full">
           <h1 id="features_title" className="section-heading">
             Explore the full story.
@@ -39,9 +39,9 @@ const Features = () => {
             <h2 className="text-5xl lg:text-7xl font-semibold">Forged in titanium.</h2>
           </div>
 
-          <div className="flex-center flex-col sm:px-10">
-            <div className="relative h-[50vh] w-full flex items-center">
-              <video playsInline id="exploreVideo" className="w-full h-full object-cover object-center" preload="none" muted autoPlay ref={videoRef}>
+          <div className="flex-center flex-col   w-full">
+            <div className="relative h-[50vh] w-full flex items-center ">
+              <video playsInline id="exploreVideo" className="w-full h-full object-cover object-top" preload="none" muted autoPlay ref={videoRef}>
                 <source src={exploreVideo} type="video/mp4" />
               </video>
             </div>
